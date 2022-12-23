@@ -1,9 +1,23 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Budget from './components/Budget';
+import Remaining from './components/Remaining';
+import ExpenseTotal from './components/ExpenseTotal';
 
 function App() {
   return (
     <div className='container'>
-      <p className='h1 text-danger'>Hello world!</p>
+      <h1 className='mt-3'>My Budget Planner</h1>
+      <div className='row'>
+        <div className='col-md'>
+          <Budget />
+        </div>
+        <div className='col-md'>
+          <Remaining />
+        </div>
+        <div className='col-md'>
+          <ExpenseTotal />
+        </div>
+      </div>
     </div>
   );
 }
