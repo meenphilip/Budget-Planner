@@ -1,13 +1,18 @@
+import { useContext } from 'react';
+import { AppContetxt } from '../context/AppContext';
 import ExpenseItem from './ExpenseItem';
 
 const ExpenseList = () => {
-  const expenses = [
-    { id: 1, name: 'Shopping', cost: 50 },
-    { id: 2, name: 'Holiday', cost: 750 },
-    { id: 3, name: 'Transport', cost: 70 },
-    { id: 4, name: 'Fuel', cost: 90 },
-    { id: 5, name: 'Rent', cost: 500 },
-  ];
+  // const expenses = [
+  //   { id: 1, name: 'Shopping', cost: 50 },
+  //   { id: 2, name: 'Holiday', cost: 750 },
+  //   { id: 3, name: 'Transport', cost: 70 },
+  //   { id: 4, name: 'Fuel', cost: 90 },
+  //   { id: 5, name: 'Rent', cost: 500 },
+  // ];
+
+  //import the expenses from the context
+  const { expenses } = useContext(AppContetxt);
   return (
     <ul className='list-group list-group-flush'>
       {expenses.map(expense => (
