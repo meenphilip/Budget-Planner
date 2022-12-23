@@ -1,6 +1,6 @@
 import ExpenseItem from './ExpenseItem';
 
-function ExpenseList() {
+const ExpenseList = () => {
   const expenses = [
     { id: 1, name: 'Shopping', cost: 50 },
     { id: 2, name: 'Holiday', cost: 750 },
@@ -20,6 +20,6 @@ function ExpenseList() {
       ))}
     </ul>
   );
-}
+};
 
 export default ExpenseList;

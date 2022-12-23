@@ -1,6 +1,6 @@
 import { TiDelete } from 'react-icons/ti';
 
-function ExpenseItem(props) {
+const ExpenseItem=(props)=> {
   return (
     <li className='list-group-item d-flex justify-content-between align-items-center'>
       {props.name}

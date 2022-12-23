@@ -3,6 +3,7 @@ import Budget from './components/Budget';
 import Remaining from './components/Remaining';
 import ExpenseTotal from './components/ExpenseTotal';
 import ExpenseList from './components/ExpenseList';
+import AddExpenseForm from './components/AddExpenseForm';
 
 function App() {
   return (
@@ -22,7 +23,13 @@ function App() {
       <h3 className='mt-3'> Expnses List</h3>
       <div className='row'>
         <div className='col-md'>
-          <ExpenseList/>
+          <ExpenseList />
+        </div>
+      </div>
+      <h3 className='mt-3'>Add Expnse</h3>
+      <div className='row'>
+        <div className='col-md'>
+          <AddExpenseForm />
         </div>
       </div>
     </div>
